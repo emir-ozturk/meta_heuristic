@@ -10,7 +10,11 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 
-class KnnProblemForMetaHeuristic(Problem):
+class KnnMetaHeuristicProblem(Problem):
+    """
+    KNN modeli için meta sezgisel algoritmalar için amaç fonksiyonu ve problem tanımları.
+    """
+
     def __init__(self, attributes: pd.DataFrame, target: pd.Series, bounds: list[dict] = None, **kwargs):
         super().__init__(bounds, minmax="max", **kwargs)
         self.attributes = attributes

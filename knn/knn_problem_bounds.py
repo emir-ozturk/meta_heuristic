@@ -1,3 +1,7 @@
+"""
+Metaheuristik algoritmalarda kullanılan amaç fonksiyonu için sınır değerleri.
+"""
+
 from mealpy import StringVar, IntegerVar, FloatVar
 
 problem_bounds: list[dict] = [
