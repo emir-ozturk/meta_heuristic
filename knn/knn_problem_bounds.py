@@ -25,6 +25,6 @@ termination: dict[str, int | float] = {
     "max_epoch": 100,        # Maksimum iterasyon sayısı
     "max_fe": 20000,         # Maksimum amaç fonksiyonu değerlendirmesi
     # "max_time": 60.0,        # Maksimum çalışma süresi (saniye)
-    "max_early_stop": 20,    # İyileşme olmadan durma eşiği (epoch)
+    "max_early_stop": 10,    # İyileşme olmadan durma eşiği (epoch)
     "epsilon": 1e-8,         # Erken durdurmada minimum iyileşme eşiği
 }
